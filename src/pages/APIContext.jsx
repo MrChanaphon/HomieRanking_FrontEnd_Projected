@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 export const APIContext = createContext();
 
 export const APIProvider = ({ children }) => {
-    const [apiUrl] = useState("http://192.168.0.110:3001"); 
+    const [apiUrl] = useState("https://crispy-waddle-975xjvgxqrvrhpx6j-3001.app.github.dev/"); //ใส่ port backend
   
     return (
       <APIContext.Provider value={{ apiUrl }}>

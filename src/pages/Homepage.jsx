@@ -382,7 +382,7 @@ const HomePage = () => {
 
                     <div className="category">
                         <h3 className="b">CATEGORY</h3>
-                        <ul className="click" style={{ lineHeight: "3" }}>
+                        <ul className="click" style={{ lineHeight: "2"}}>
                             {categories.map((cat, index) => (
                                 <li key={index}>
                                     {cat.icon} <a href={cat.name === "TRENDING" || cat.name === "LATEST" ? "?" : `?category=${cat.name}`}>{cat.name}</a>
